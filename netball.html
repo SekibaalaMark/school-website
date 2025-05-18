@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netball Team - Blessing Junior School Kaswa</title>
+  <link rel="stylesheet" href="style3.css" />
+  <style>
+    /* Styling for the netball section */
+    .netball {
+      margin-top: 30px;
+      text-align: center;
+    }
+    .netball h2 {
+      color: #0059b3;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+    .netball p {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      text-align: center;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .team-intro {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+    .team-photo {
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      margin-bottom: 20px;
+    }
+    .sub-gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+      margin-top: 30px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media (max-width: 600px) {
+      .sub-gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+    .sub-item {
+      background: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .sub-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    .sub-item img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+    .sub-item-content {
+      padding: 20px;
+    }
+    .sub-item h3 {
+      color: #003366;
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
+    .sub-item p {
+      font-size: 1rem;
+      color: #555;
+    }
+    .team-info {
+      margin-top: 40px;
+      background: #f0f7ff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    .team-info h3 {
+      color: #003366;
+      font-size: 1.4rem;
+      margin-bottom: 15px;
+    }
+    .team-stats {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .stat-item {
+      background: white;
+      border-radius: 8px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      width: 180px;
+      text-align: center;
+    }
+    .stat-number {
+      font-weight: bold;
+      color: #0059b3;
+      font-size: 2rem;
+      margin-bottom: 5px;
+    }
+    .stat-label {
+      font-size: 0.9rem;
+      color: #555;
+    }
+    .coach-section {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .coach-quote {
+      font-style: italic;
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      border-left: 4px solid #0059b3;
+      max-width: 700px;
+      margin: 20px auto;
+      text-align: left;
+    }
+    .quote-author {
+      text-align: right;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .schedule {
+      margin-top: 40px;
+    }
+    .schedule h3 {
+      color: #003366;
+      font-size: 1.4rem;
+      margin-bottom: 15px;
+    }
+    .schedule-table {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      border-collapse: collapse;
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    .schedule-table th, .schedule-table td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    .schedule-table th {
+      background-color: #0059b3;
+      color: white;
+      font-weight: 500;
+    }
+    .schedule-table tr:last-child td {
+      border-bottom: none;
+    }
+    .schedule-table tr:hover {
+      background-color: #f5f9ff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="school-header">
+      <div class="school-logo-container">
+        <img src="icon.png" alt="Blessing Junior School Kaswa Badge" class="school-badge">
+        <div class="school-title">
+          <h1>Blessing Junior School Kaswa</h1>
+          <p class="school-motto">"Train up a child"</p>
+        </div>
+      </div>
+      <p>Shaping bright futures with care and excellence</p>
+    </div>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="academics.html">Academics</a></li>
+      <li><a href="donations.html">Donations</a></li>
+      <li><a href="sports22.html">Sports</a></li>
+      <li><a href="football.html">Football</a></li>
+      <li><a href="netball.html" class="active">Netball</a></li>
+      <li><a href="community.html">Community Contribution</a></li>
+      <li><a href="music.html">Music</a></li>
+      <li><a href="location.html">Location</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <section class="netball">
+      <h2>Blessing Junior School Girls' Netball Team</h2>
+      
+      <div class="team-intro">
+        <img src="netball-team.jpg" alt="Blessing Junior School Netball Team" class="team-photo" />
+        <p>
+          Our girls' netball team embodies excellence, teamwork, and determination at Blessing Junior School Kaswa.
+          The team has become a source of pride for our school, demonstrating that with dedication and hard work,
+          our girls can achieve remarkable success both on and off the court. Through netball, our students develop
+          important skills like leadership, communication, and strategic thinking.
+        </p>
+      </div>
+      
+      <div class="sub-gallery">
+        <div class="sub-item">
+          <img src="training-netball.jpg" alt="Netball Practice Session" />
+          <div class="sub-item-content">
+            <h3>Training & Practice</h3>
+            <p>Our netball team trains diligently twice a week, focusing on shooting accuracy, defensive techniques, court positioning, and game strategies to prepare for competitions.</p>
+          </div>
+        </div>
+        
+        <div class="sub-item">
+          <img src="Competition-netball.jpg" alt="Netball Match" />
+          <div class="sub-item-content">
+            <h3>Competition Day</h3>
+            <p>The team regularly participates in district-level tournaments and friendly matches with neighboring schools, showcasing their skills and sportsmanship.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="team-info">
+        <h3>Team Highlights</h3>
+        <p>Our netball program has grown significantly over the years, becoming one of our school's most successful sports programs:</p>
+        
+        <div class="team-stats">
+          <div class="stat-item">
+            <p class="stat-number">15</p>
+            <p class="stat-label">Team Members</p>
+          </div>
+          <div class="stat-item">
+            <p class="stat-number">8</p>
+            <p class="stat-label">Tournaments Won</p>
+          </div>
+          <div class="stat-item">
+            <p class="stat-number">3</p>
+            <p class="stat-label">District Titles</p>
+          </div>
+          <div class="stat-item">
+            <p class="stat-number">2</p>
+            <p class="stat-label">Regional Finals</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="coach-section">
+        <h3>From Our Coach</h3>
+        <div class="coach-quote">
+          <p>"Our netball program is about more than just winning games. It's about building confident young women who believe in themselves and their abilities. We focus on developing not just athletic skills, but also character, discipline, and teamwork – qualities that will serve our girls throughout their lives."</p>
+          <p class="quote-author">- Ms. Sarah Namukasa, Netball Coach</p>
+        </div>
+      </div>
+      
+      <div class="schedule">
+        <h3>Upcoming Matches</h3>
+        <table class="schedule-table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Opponent</th>
+              <th>Venue</th>
+              <th>Time</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>July 25, 2025</td>
+              <td>St. Catherine Girls School</td>
+              <td>Home</td>
+              <td>2:30 PM</td>
+            </tr>
+            <tr>
+              <td>August 8, 2025</td>
+              <td>Busula Girls Primary</td>
+              <td>Away</td>
+              <td>3:00 PM</td>
+            </tr>
+            <tr>
+              <td>August 22, 2025</td>
+              <td>Luwero Girls Academy</td>
+              <td>Home</td>
+              <td>2:00 PM</td>
+            </tr>
+            <tr>
+              <td>September 15, 2025</td>
+              <td>District Tournament</td>
+              <td>Luwero Sports Complex</td>
+              <td>9:00 AM</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>Located in Kaswa village, Busula Town, Musaale Parish, Katikamu Subcounty, Luwero District.</p>
+    <p>&copy; 2025 Blessing Junior School Kaswa</p>
+    
+    <div class="map-container">
+      <h3>Our Location</h3>
+      <div class="google-map" style="padding-bottom: 50%;">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63832.654677848506!2d32.45830312167969!3d0.6756458999999955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177c5bcff858c445%3A0x23c632a5b3c9b32b!2sBlessing%20Juniors%2C%20Youths%20and%20Community%20Support%20Orga6!5e0!3m2!1sen!2sug!4v1747571756088!5m2!1sen!2sug" 
+          width="100%" 
+          height="300" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

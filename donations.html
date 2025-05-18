@@ -44,11 +44,12 @@
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     }
     .donation-item img {
-      width: 80px;
-      height: 80px;
-      object-fit: contain;
+      width: 150px;  /* Increased from 80px */
+      height: 150px; /* Increased from 80px */
+      object-fit: cover; /* Changed from contain to cover for better photo display */
       margin: 0 auto 20px;
       display: block;
+      border-radius: 8px; /* Added border radius for nicer appearance */
     }
     .donation-item h3 {
       color: #003366;
@@ -79,9 +80,9 @@
       margin-bottom: 15px;
     }
     .contact-item img {
-      width: 24px;
-      height: 24px;
-      margin-right: 10px;
+      width: 36px;  /* Increased from 24px */
+      height: 36px; /* Increased from 24px */
+      margin-right: 15px; /* Increased from 10px */
     }
     .contact-item p {
       font-size: 1.1rem;
@@ -120,20 +121,23 @@
     <p>Shaping bright futures with care and excellence</p>
   </div>
 </header>
+
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="academics.html">Academics</a></li>
       <!--<li><a href="feesx.html">Fees Structure</a></li>-->
-      <li><a href="Donations.html" class="active">Donations</a></li>
+      <li><a href="donations.html" class="active">Donations</a></li>
       <!--<li><a href="about.html">About Us</a></li>-->
       <li><a href="sports22.html">Sports</a></li>
       <li><a href="location.html">Location</a></li>
       <li><a href="music.html">Music</a></li>
       <li><a href="football.html">Football</a></li>
+      <li><a href="netball.html">Netball</a></li>
       <li><a href="community.html">Community contribution</a></li>
     </ul>
   </nav>
+
   <main>
     <section class="donations">
       <h2>Support Our School</h2>
@@ -154,7 +158,7 @@
         <div class="donation-item">
           <img src="letters.jpg" alt="Educational Materials" />
           <h3>Educational Materials</h3>
-          <p>Donate books, stationery,or other educational resources to enhance our teaching and learning environment.</p>
+          <p>Donate books, stationery, or other educational resources to enhance our teaching and learning environment.</p>
           <a href="#contact" class="btn">Contact Us</a>
         </div>
         
@@ -192,11 +196,12 @@
       </div>
     </section>
   </main>
-  <footer>
 
+  <footer>
     <p>Located in Kaswa village, Busula Town, Musaale Parish, Katikamu Subcounty, Luwero District.</p>
     <p>&copy; 2025 Blessing Junior School Kaswa</p>
-            <!-- Add this to your Donations.html or other pages where appropriate -->
+        
+    <!-- Add this to your Donations.html or other pages where appropriate -->
 <div class="map-container">
   <h3>Our Location</h3>
   <div class="google-map" style="padding-bottom: 50%;">
@@ -211,7 +216,6 @@
     </iframe>
   </div>
 </div>
-
   </footer>
 </body>
 </html>
