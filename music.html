@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music & Performing Arts - Blessing Junior School Kaswa</title>
+  <link rel="stylesheet" href="style3.css" />
+  <style>
+    /* Styling for the music section */
+    .music {
+      margin-top: 30px;
+      text-align: center;
+    }
+    .music h2 {
+      color: #0059b3;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+    .music p {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      text-align: center;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .music-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-top: 20px;
+    }
+    .music-item {
+      background: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      padding: 15px;
+    }
+    .music-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    .music-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    .music-item h3 {
+      color: #003366;
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
+    .music-item p {
+      font-size: 1rem;
+      color: #555;
+    }
+    .upcoming-events {
+      margin-top: 40px;
+      background: #f0f7ff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    .upcoming-events h3 {
+      color: #003366;
+      font-size: 1.4rem;
+      margin-bottom: 15px;
+    }
+    .event-list {
+      text-align: left;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .event-item {
+      padding: 15px 0;
+      border-bottom: 1px solid #ddd;
+    }
+    .event-item:last-child {
+      border-bottom: none;
+    }
+    .event-date {
+      font-weight: bold;
+      color: #0059b3;
+      margin-bottom: 5px;
+    }
+    .event-title {
+      font-size: 1.1rem;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="school-header">
+      <div class="school-logo-container">
+        <img src="icon.png" alt="Blessing Junior School Kaswa Badge" class="school-badge">
+        <div class="school-title">
+          <h1>Blessing Junior School Kaswa</h1>
+          <p class="school-motto">"Train up a child"</p>
+        </div>
+      </div>
+      <p>Shaping bright futures with care and excellence</p>
+    </div>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="academics.html">Academics</a></li>
+      <li><a href="donations.html">Donations</a></li>
+      <li><a href="sports22.html">Sports</a></li>
+      <li><a href="community.html">Community contribution</a></li>
+      <li><a href="music.html" class="active">Music</a></li>
+      <li><a href="football.html">Football</a></li>
+      <li><a href="location.html">Location</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <section class="music">
+      <h2>Music & Performing Arts</h2>
+      <p>
+        At Blessing Junior School Kaswa, we believe that music and performing arts are essential components of a well-rounded education.
+        Our students develop confidence, creativity, and teamwork through singing, dancing, and drama activities.
+        These programs help children express themselves, preserve cultural traditions, and build important life skills.
+      </p>
+      
+      <div class="music-gallery">
+        <div class="music-item">
+          <img src="choir.jpg" alt="School Choir Performance" />
+          <h3>School Choir</h3>
+          <p>Our talented choir performs traditional and contemporary songs at school events, community gatherings, and music competitions. Students learn vocal techniques, harmony, and the joy of singing together.</p>
+        </div>
+        
+        <div class="music-item">
+          <img src="culture.jpg" alt="Traditional Dance Group" />
+          <h3>Traditional Dance</h3>
+          <p>Students learn and perform traditional Ugandan dances, preserving cultural heritage while developing coordination, rhythm, and an appreciation for their cultural roots.</p>
+        </div>
+        
+        <div class="music-item">
+          <img src="drama.jpg" alt="Drama Performance" />
+          <h3>Drama & Storytelling</h3>
+          <p>Through drama performances, our students develop public speaking skills, creativity, and confidence. They perform plays that entertain while teaching important moral lessons.</p>
+        </div>
+        
+        <div class="music-item">
+          <img src="police.jpg" alt="Music Instruments Class" />
+          <h3>More on Drama</h3>
+          <p>Students have the opportunity to act and get a glimpse of how they want to be in Future like "Police men" and more.</p>
+        </div>
+      </div>
+      
+      <div class="upcoming-events">
+        <h3>Upcoming Performances</h3>
+        <div class="event-list">
+          <div class="event-item">
+            <p class="event-date">July 15, 2025</p>
+            <p class="event-title">End of Term Concert</p>
+            <p>A showcase of music, dance, and drama performances by all classes at the school compound.</p>
+          </div>
+          <div class="event-item">
+            <p class="event-date">August 9, 2025</p>
+            <p class="event-title">Community Cultural Day</p>
+            <p>Traditional dance performances at the Busula Town community center.</p>
+          </div>
+          <div class="event-item">
+            <p class="event-date">September 20, 2025</p>
+            <p class="event-title">Inter-School Music Competition</p>
+            <p>Our choir and dance groups will compete with other schools in Luwero District.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>Located in Kaswa village, Busula Town, Musaale Parish, Katikamu Subcounty, Luwero District.</p>
+    <p>&copy; 2025 Blessing Junior School Kaswa</p>
+    
+    <div class="map-container">
+      <h3>Our Location</h3>
+      <div class="google-map" style="padding-bottom: 50%;">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63832.654677848506!2d32.45830312167969!3d0.6756458999999955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177c5bcff858c445%3A0x23c632a5b3c9b32b!2sBlessing%20Juniors%2C%20Youths%20and%20Community%20Support%20Orga6!5e0!3m2!1sen!2sug!4v1747571756088!5m2!1sen!2sug" 
+          width="100%" 
+          height="300" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
