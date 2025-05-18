@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sports - Blessing Junior School Kaswa</title>
+  <link rel="stylesheet" href="style3.css" />
+
+  <style>
+    /* Only styling the sports section */
+    .sports {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .sports h2 {
+      color: #0059b3;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+
+    .sports p {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .sports-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-top: 20px;
+    }
+
+    .sport-item {
+      background: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      padding: 15px;
+    }
+
+    .sport-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .sport-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .sport-item h3 {
+      color: #003366;
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
+
+    .sport-item p {
+      font-size: 1rem;
+      color: #555;
+    }
+  </style>
+
+</head>
+<body>
+<header>
+  <div class="school-header">
+    <div class="school-logo-container">
+      <img src="icon.png" alt="Blessing Junior School Kaswa Badge" class="school-badge">
+      <div class="school-title">
+        <h1>Blessing Junior School Kaswa</h1>
+        <p class="school-motto">"Train up a child"</p>
+      </div>
+    </div>
+    <p>Shaping bright futures with care and excellence</p>
+  </div>
+</header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="academics.html">Academics</a></li>
+      <!--<li><a href="feesx.html">Welfare Support</a></li>-->
+      <li><a href="donations.html">Donations</a></li>
+      <!--<li><a href="about.html">About Us</a></li>-->
+      <li><a href="sports22.html" class="active">Sports</a></li>
+      <li><a href="music.html">Music</a></li>
+      <li><a href="football.html">Football</a></li>
+      <li><a href="location.html">Location</a></li>
+      <li><a href="community.html">Community contribution</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="sports">
+      <h2>Our Sports Activities</h2>
+      <p>
+        At Blessing Junior School Kaswa, we believe in the importance of sports for physical development, teamwork, and discipline.
+        Our students actively participate in various sports activities throughout the year.
+      </p>
+
+      <div class="sports-gallery">
+        <div class="sport-item">
+          <img src="images/football.jpg" alt="Football Match" />
+          <h3>Football</h3>
+          <p>Our football team trains weekly and participates in inter-school tournaments.</p>
+        </div>
+
+        <div class="sport-item">
+          <img src="images/athletics.jpg" alt="Athletics" />
+          <h3>Athletics</h3>
+          <p>We encourage running, long jump, and other athletic events during our annual sports day.</p>
+        </div>
+
+        <div class="sport-item">
+          <img src="images/netball.jpg" alt="Netball Team" />
+          <h3>Netball</h3>
+          <p>Our netball team fosters teamwork and sportsmanship among our girls.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Located in Kaswa village, Busula Town, Musaale Parish, Katikamu Subcounty, Luwero District.</p>
+    <p>&copy; 2025 Blessing Junior School Kaswa</p>
+            <!-- Add this to your Donations.html or other pages where appropriate -->
+<div class="map-container">
+  <h3>Our Location</h3>
+  <div class="google-map" style="padding-bottom: 50%;">
+    <!-- Replace with your actual Google Maps embed code -->
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63832.654677848506!2d32.45830312167969!3d0.6756458999999955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177c5bcff858c445%3A0x23c632a5b3c9b32b!2sBlessing%20Juniors%2C%20Youths%20and%20Community%20Support%20Orga6!5e0!3m2!1sen!2sug!4v1747571756088!5m2!1sen!2sug" 
+      width="100%" 
+      height="300" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy">
+    </iframe>
+  </div>
+</div>
+
+  </footer>
+</body>
+</html>
